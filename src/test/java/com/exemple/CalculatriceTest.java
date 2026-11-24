@@ -9,8 +9,7 @@ class CalculatriceTest {
 
     @Test
     void additionDeuxNombres() {
-         assertEquals(5, calc.additionner(2, 3)); 
-    }
+    assertEquals(6, calc.additionner(2, 3))    }
 
     @Test
     void divisionNormale() {
