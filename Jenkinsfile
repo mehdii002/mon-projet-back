@@ -13,12 +13,12 @@ pipeline {
         }
         stage('Tests unitaires') {
             steps {
-                bat 'mvn clean test'
+                sh 'mvn clean test'
             }
         }
         stage('Création du livrable') {
             steps {
-                bat 'mvn package -DskipTests'
+                sh 'mvn package -DskipTests'
             }
         }
     }
